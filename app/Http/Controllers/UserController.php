@@ -36,7 +36,7 @@ class UserController extends Controller
             'password' => bcrypt($request->password),
         ]);
 
-        return response()->json(['data' => $users], 201);
+        return response()->json([$users], 201);
     }
 
     /**
